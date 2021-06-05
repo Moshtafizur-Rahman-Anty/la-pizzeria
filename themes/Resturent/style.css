@@ -1,0 +1,1123 @@
+/* 
+
+Theme Name: Resturent
+Author: Mostafizur
+Description: A theme for Restaurant
+Version: 1.0
+Licence: GNU General Public Licence v2 or later
+Licence URI:http://www.gnu.org/licenses/gpl-2.0.html
+Tags: custom post type, CSS Grid, Flexbox ready, mobil first
+Text Domain: resturent
+
+*/
+
+.sr-text {
+    display: none;
+}
+
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+
+
+*,
+*:before,
+*:after {
+
+    box-sizing: inherit;
+}
+
+body {
+
+    line-height: 2;
+    margin: 0;
+
+}
+
+
+
+/*=======================================================================
+                                HEADING
+   =======================================================================*/
+
+h1,
+h2,
+h3 {
+
+    margin: 0.5rem 0;
+    line-height: 1.2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+
+h3 {
+    font-size: 2.8rem;
+}
+
+h4 {
+    font-size: 2.4rem;
+}
+
+p {
+    font-size: 1.4rem;
+}
+
+.clear,
+.clear::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+button,.button {
+
+    background-color: rgb(97, 0, 0);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    width: auto;
+    border: 8px;
+    color: #fff;
+    padding: 15px 80px;
+    margin-top: 2rem;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.primary {
+    background-color: #a61206;
+    transition: background-color 0.5s ease;
+}
+
+.primary:hover {
+    background-color: #7b0da4;
+}
+
+.secondary {
+    background-color: #f19f30;
+    transition: background-color 0.5s ease;
+}
+
+.secondary:hover {
+    background-color: #da8b20;
+
+}
+
+.container {
+
+    max-width: 110rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.text-center {
+
+    text-align: center;
+}
+
+.primary-text {
+    color: #a61206;
+}
+
+img {
+    max-width: 100%;
+    height: 100%;
+}
+
+/* HEADER */
+
+.site-nav {
+    display: none;
+}
+
+@media (min-width: 768px) {
+
+    .site-nav {
+        display: block;
+    }
+}
+
+header .site-header {
+    border-bottom: 1px solid #c1c1c1;
+    padding-bottom: 3rem;
+}
+
+header .site-header .container {
+    width: 110rem;
+}
+
+
+
+div .logo {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    div .logo {
+        text-align: left;
+    }
+}
+
+
+@media (min-width: 992px) {
+    div .logo {
+        text-align: center;
+    }
+}
+
+div .logo img {
+    width: 250px;
+
+}
+
+
+@media (min-width: 768px) {
+    .site-header {
+        position: relative;
+    }
+
+    .site-header .header-information {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+
+div .address {
+    display: block;
+    clear: both;
+    padding-top: 1.5rem;
+
+}
+
+div .address p {
+    margin: 0;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    div .address p {
+        text-align: right;
+        margin-right: 20px;
+    }
+}
+
+/* social */
+
+.socials ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+@media (min-width: 768px) {
+    nav .socials ul {
+        float: right;
+    }
+}
+
+.socials ul li a:before {
+
+    font-family: 'FontAwesome';
+    display: inline-block;
+    vertical-align: top;
+    padding: 0px 5px;
+    content: '\f08e';
+    font-size: 2rem;
+    color: #000000;
+
+
+}
+
+.socials ul li {
+    position: relative;
+    display: inline-block;
+}
+
+
+
+.socials li a[href*="facebook.com"]::before {
+    content: '\f09a';
+}
+
+.socials li a[href*="twitter.com"]::before {
+    content: '\f099';
+}
+
+
+.socials li a[href*="pinterest.com"]::before {
+    content: '\f231';
+}
+
+
+.socials li a[href*="youtube.com"]::before {
+    content: '\f16a';
+}
+
+
+.socials li a[href*="instagram.com"]::before {
+    content: '\f16d';
+}
+
+@media (min-width: 768px) {
+    .site-nav ul li {
+        display: table-cell;
+        width: 1%;
+    }
+
+}
+
+.site-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: table;
+}
+
+
+
+.site-nav ul li a {
+
+    text-align: center;
+    padding: 5px 0;
+    display: block;
+    font-weight: bold !important;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+
+}
+
+.single-menu .main-menu .site-nav ul li.menu-item-24 a,
+.site-nav ul li.current_page_parent a{
+    border-bottom: 4px solid #a61206 !important;
+
+}
+
+.current_page_item {
+
+    border-bottom: 4px solid #a61206 !important;
+}
+
+
+
+
+/* Responsive Menu */
+
+@media (max-width: 768px) {
+
+
+
+    .mobile-menu a {
+        height: 40px;
+        line-height: 40px;
+        background-color: #a61206;
+        width: 100%;
+        display: block;
+        color: white;
+        text-align: center;
+        font-size: 2rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Raleway', sans-serif;
+        margin-top: 1.5rem;
+
+    }
+
+}
+
+
+@media (min-width: 768px) {
+    .mobile-menu a {
+        display: none;
+    }
+}
+
+
+/* Hero Image */
+
+.hero {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 45rem;
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero .hero-content {
+
+    display: table-cell;
+    vertical-align: middle;
+    color: #ffffff;
+    z-index: 20;
+    position: relative;
+
+}
+
+@media (min-width: 768px) {
+    .hero-text {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .hero-text {
+        width: 60%;
+
+    }
+}
+
+
+.main-content {
+    padding: 6rem;
+    background-color: #ffffff;
+    position: relative;
+}
+
+
+@media (min-width: 768px) {
+    .main-content {
+        margin-top: -90px;
+        z-index: 400px;
+    }
+}
+
+.content-text p {
+    font-size: 1.8rem;
+    line-height: 4..5rem;
+}
+
+
+
+/* BOXES */
+
+.box-information {
+    display: grid;
+}
+
+
+@media (min-width: 768px) {
+    .box-information {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.single-box {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    color: white;
+    text-align: center;
+}
+
+
+@media (min-width: 768px) {
+    .single-box {
+        grid-template-columns: unset;
+        grid-template-rows: 1fr 1fr;
+    }
+
+}
+
+.single-box:nth-child(1) {
+
+    background-color: #f19f30;
+
+}
+
+.single-box:nth-child(2) {
+
+    background-color: #127427;
+
+}
+
+.single-box:nth-child(3) {
+
+    background-color: #a61206;
+
+}
+
+@media (min-width: 768px) {
+    .single-box:nth-child(2) img {
+        order: 2;
+    }
+
+    .single-box:nth-child(2) div {
+        order: 1;
+    }
+}
+
+.content-box {
+    display: grid;
+    grid-template-rows: 10% 20% 60% 10%;
+    grid-template-areas: "."
+        "top"
+        "text"
+        "."
+}
+
+@media (min-width: 768px) {
+    .content-box {
+        grid-template-rows: 20% 30% 30% 20%;
+
+    }
+}
+
+.content-box h3 {
+    grid-area: top;
+    margin: 5px 0px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.content-box p {
+    grid-area: text;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 30px;
+    padding: 30px 0px;
+    border-top: 1px solid #c1c1c1;
+    text-align: center;
+}
+
+footer nav ul {
+    list-style: none;
+}
+
+footer nav ul li {
+    display: inline;
+    margin-right: 1.5rem;
+}
+
+footer nav ul li:last-child .separator {
+    display: none;
+}
+
+footer nav ul li a {
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+footer .location {
+    margin-top: 3rem;
+}
+
+footer p {
+    margin: 0 0 5px 0;
+    font-size: 1.4rem;
+}
+
+footer p .copyright {
+    margin-top: 2rem;
+
+}
+
+/* Grid */
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+
+    .container-grid {
+        margin-left: -1rem;
+        margin-right: -1rem;
+        display: inline-block;
+    }
+
+    .container-grid::after {
+        content: ' ';
+        display: inline-block;
+        clear: both;
+    }
+
+    [class="columns2-4"] {
+        padding: 0 1rem;
+        float: left;
+    }
+
+    .columns1-4 {
+        width: 25%;
+
+    }
+
+    .columns2-4 {
+        width: 50%;
+
+    }
+
+    .columns3-4 {
+        width: 75%;
+    }
+
+    .columns1-3 {
+        width: 33% !important;
+        display: inline-block;
+        
+    }
+
+    .columns2-3 {
+        width: 66.6666%;
+    }
+    
+}
+
+
+.our-specialties {
+    padding: 0 6rem;
+
+}
+
+.specialties-content {
+    padding: 2rem;
+}
+
+.specialties-content a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.specialties-content h4 {
+    border-bottom: 1px solid #dfdfdd;
+    padding-bottom: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+
+.specialties-content h3 span {
+    float: right;
+    font-size: 3rem;
+    color: #f19f30;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.specialties-content p {
+    color: #3d3d3d;
+    line-height: 3rem;
+}
+
+/* single specialties template */
+
+p .ingredients {
+    color: #a61206;
+    font-size: 3rem;
+    margin: 0;
+
+}
+
+
+.single-menu p.ingredients,
+.single-menu p.price {
+    color: #a61206;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.single-menu p.price span {
+    color: #000;
+    font-size: 2rem;
+}
+
+/* Blog */
+
+.entry {
+    margin-top: 3rem;
+}
+
+ .entry-header {
+    margin-top: 2rem;
+}
+
+ .entry-header .date,
+ .entry-information .date {
+
+    background-color: #f19f30;
+    float: left;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    padding-top: 5px;
+    margin-right: 2rem;
+}
+
+.entry-header .date time,
+.entry-information .date time {
+    font-size: 3rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.entry-header .date time span,
+.entry-information .date time span {
+    font-size: 1.6rem;
+    display: block;
+    text-transform: uppercase;
+
+}
+
+.entry-header .entry-title {
+
+    float: right;
+    width: calc(100% - 90px);
+
+}
+
+.entry-header h2 {
+    margin: 0;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.entry-header p .author,
+.entry-information p.author {
+    text-transform: uppercase;
+    color: #f19f30;
+    margin-top: 1rem;
+    font-family: 'Raleway', sans-serif;
+    color: #000;
+    margin: 0;
+}
+.entry-information {
+    padding-top: 3rem;
+}
+
+.entry-information p.author,
+p .author i {
+    font-size: 3rem;
+}
+
+.entry-information p.author {
+    display: inline;
+    float: left;
+    margin-top: 4rem;
+}
+
+.entry-content p {
+
+    margin-bottom: 0;
+    line-height: 2.4rem;
+
+}
+
+button span {
+    color: white;
+}
+
+
+/* Comments */
+
+.comments-respond h3 {
+    font-weight: 700;
+    text-align: center;
+
+}
+
+
+@media (min-width:768px ) {
+    div.comments {
+        width: 80%;
+    }
+}
+
+@media (min-width: 992px) {
+    div.comments {
+        width: 60%;
+    }
+}
+
+
+.comment-respond form label {
+    width: 200px;
+    display: inline-block;
+    text-align: right;
+    padding-right: 20px;
+    font-weight: bold;
+}
+
+.comment-respond form input,
+.comment-respond form textarea {
+    padding: 10px;
+    width: calc(100% - 220px);
+    font-size: 1.8rem;
+}
+
+.comment-respond form input[type="submit"] {
+    margin: 0 auto;
+    display: inline-block;
+    border: none;
+    width: auto;
+    background-color: #a61206;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+p.form-submit {
+    text-align: center;
+}
+
+.comment-notes {
+    text-align: center;
+}
+
+.comment-respond h3 {
+    text-align: center;
+}
+
+p.logged-in-as a {
+    color: #a61206;
+    text-align: center;
+    display: block;
+}
+
+/* Comment List */
+
+ol.commentList  {
+
+    list-style: none;
+}
+
+ol.commentList li.comment {
+
+    background-color: #e1e1e1;
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+ol.commentList li.comment cite {
+    color: #a61206;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+li.comment .comment-author {
+    margin-bottom: 1rem;
+}
+
+li.comment a{
+    
+    color: #a61206;
+    text-decoration: none;
+
+}
+
+li.comment ul.children {
+    list-style: none;
+}
+
+li.comment ul.children li{
+    background-color: #fff;
+    margin-top: 2rem;
+}
+
+/* Reservation Page */
+div.reservation {
+
+    background-image: url(img/reservation.jpg);
+    background-repeat: no-repeat;
+    background-position:top left !important ;
+    background-size: cover;
+
+}
+
+@media (min-width: 768px) {
+    .reservation-info {
+        margin-left: 50%;
+    }
+}
+
+.reservation-form {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+ .reservation-form .field {
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+
+
+ .reservation-form .field input,
+ .reservation-form .field textarea {
+    width: 100%;
+    border: 3px solid #000 ;
+    padding: 15px 10px;
+}
+
+ .reservation-form  textarea {
+    height: 200px;
+
+}
+
+.reservation-form:-webkit-input-placeholder {
+    color: #000000 !important;
+
+}
+
+
+.reservation-form::-moz-placeholder {
+    color: #000000 !important;
+
+}
+.reservation-form::-ms-input-placeholder {
+    color: #000000 !important;
+
+}
+
+ .reservation-form input[type="submit"] {
+    border: none !important;
+}
+
+
+
+/* FRONT PAGE */
+
+.home div.hero {
+    height: 750px;
+
+}
+
+
+@media (min-width: 768px) {
+    .home .main-content {
+        margin-top: 0;
+        padding: 0;
+    }
+
+}
+
+.home .hero-text p{
+line-height: 4rem;
+font-size: 1.8rem;
+}
+
+.home .container-grid h2 {
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+}
+
+
+@media (min-width: 992px) {
+    .home .hero-text {
+        width: 40%;
+    } 
+}
+
+.specialty-content {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+
+}
+
+.specialty-content .information {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(241,169,48, .75);
+    text-align: center;
+    color: white;
+    padding: .5rem;
+    opacity: 0;
+    transition:  all .5s ease-in-out;
+    
+}
+
+
+.specialty-content:hover .information {
+    top: 0;
+    opacity: 1;
+}
+
+.specialty-content .information .price {
+    font-size: 6rem;
+    font-weight: bold;
+    color: white;
+    margin-top: 3rem;
+}
+
+.specialty-content .information h3  {
+    font-size: 3rem;
+    margin-top: 4rem;
+    font-weight: 700;
+}
+
+.specialty-content .information p {
+    margin: 0 0 1rem 0;
+    color: white;
+}
+
+.specialty-content .information a {
+    color: white;
+}
+
+
+@media (max-width: 770px) {
+    .specialty-content {
+        overflow: visible;
+        display: block;
+        margin-bottom: 3rem;
+
+    }
+
+.specialty-content .information {
+    position: relative;
+    opacity: 1;
+    background-color: #f19f30;
+    padding: 3rem;
+}
+
+.specialty-content img {
+    width: 100%;
+}
+}
+
+/* Ingredients */
+
+.ingredients {
+    background-image: url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    margin-top: 5rem;
+    padding: 8rem 0;
+    color: white;
+}
+
+.ingredients  h3 {
+    line-height: 6rem;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.ingredients p {
+    line-height: 4rem;
+    font-size: 2rem;
+}
+
+@media (max-width: 780px) {
+    section .ingredients p,
+    section .ingredients h3 {
+        text-align: center;
+    }
+
+     .ingredients a {
+        margin: 0 auto;
+        display: block;
+        width: 250px;
+    }
+}
+
+.ingredients image {
+    padding-top: 3rem;
+    text-align: center;
+
+}
+
+ .image img {
+    width: 80%;
+
+}
+
+
+
+.home .reservation-info {
+    margin: 0 30rem;
+}
+
+
+.home .reservation-info {
+    margin-top: 10rem ;
+    
+}
+
+
+.home .reservation-form {
+    margin: 0 auto !important;
+    padding: 3rem;
+}
+
+
+.home .reservation-form input[type="submit"] {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

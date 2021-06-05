@@ -1,0 +1,84 @@
+********************************************************************************
+DUPLICATOR-LITE PACKAGE-LOG: April 11, 2021 9:19 am
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	1.4.0
+WORDPRESS:	5.7
+PHP INFO:	7.2.34 | SAPI: apache2handler
+SERVER:		Apache/2.4.46 (Win64) OpenSSL/1.1.1g PHP/7.2.34 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 4294967296 (512M default) 
+MEMORY STACK: 8MB
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   MYSQLDUMP
+MYSQLTIMEOUT: 5000
+MYSQLDUMP:    Is Supported
+SQL CREATED: 20210411_lapizzaria_0eeefa14273479c63724_20210411091945_database.sql
+SQL FILE SIZE: 813.4KB (832923)
+SQL FILE TIME: 2021-04-11 09:19:53
+SQL RUNTIME: 0.52 sec.
+
+********************************************************************************
+ARCHIVE (ZIP):
+********************************************************************************
+ARCHIVE DIR:  C:/xampp/htdocs/La
+ARCHIVE FILE: 20210411_lapizzaria_0eeefa14273479c63724_20210411091945_archive.zip
+FILTERS: *OFF*
+DIRS:
+	not set
+FILES:
+	not set
+EXTS:  not set
+----------------------------------------
+COMPRESSING
+SIZE:	81.84MB
+STATS:	Dirs 430 | Files 3,260
+SQL ADDED: 20210411_lapizzaria_0eeefa14273479c63724_20210411091945_database.sql
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 3690
+    [filename] => C:\xampp\htdocs\La\wp-content\backups-dup-lite\tmp\20210411_lapizzaria_0eeefa14273479c63724_20210411091945_archive.zip
+    [comment] => 
+)
+
+FILE ADDED TO ZIP: 3689
+COMPRESSION RESULT: '1'
+COMPRESSED SIZE: 37.72MB
+ARCHIVE RUNTIME: 27.50 sec.
+MEMORY STACK: 10MB
+building installer
+add_extra_files1
+add_extra_files2
+add_extra_files3
+add_extra_files4
+Doing archive file check
+add_extra_files5
+add_extra_files6
+add_extra_files8
+Successfully opened zip C:/xampp/htdocs/La/wp-content/backups-dup-lite/tmp/20210411_lapizzaria_0eeefa14273479c63724_20210411091945_archive.zip
+Adding enhanced installer files to archive using ZipArchive
+Installer files added to archive
+Added to archive
+After ziparchive close when adding installer
+
+********************************************************************************
+INTEGRITY CHECKS:
+********************************************************************************
+SQL FILE: 813.4KB
+INSTALLER FILE: 63.95KB
+ARCHIVE FILE: 39.23MB 
+EXPECTED FILE/DIRECTORY COUNT: 3,690
+ACTUAL FILE/DIRECTORY COUNT: 3,689
+ARCHIVE CONSISTENCY TEST: Pass
+
+********************************************************************************
+RECORD ID:[1]
+TOTAL PROCESS RUNTIME: 29.01 sec.
+PEAK PHP MEMORY USED: 10MB
+DONE PROCESSING => 20210411_lapizzaria April 11, 2021 9:20 am
+
